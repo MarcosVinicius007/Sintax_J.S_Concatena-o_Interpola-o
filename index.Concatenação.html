@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concatenação e Interpolação</title>
+    </head>
+        <body>
+            <h1>Concatenação e Interpolação</h1>
+            <script>  
+          
+            let name,sobrenome,ege  
+            name= "Marcos" 
+            sobrenome = "Vinicius" 
+            age= 37 
+            address = {
+                street : "Rua Central", 
+                city:"São José dos Campos",
+
+            }
+            console.log("sobrenome",sobrenome)
+            console.log("name",name)
+            console.log("age",age)
+
+            //aqui no console.log o JavaScript nãole o   sobrenome (Objeto é o q apareçe no console)//
+
+            console.log(name + " tem " +age+ " anos.e reside em "+ address )//essa é a concatenação(forma antiga)//
+            console.log(`${name} tem ${age} anos.`)//Interpolação(forma mais atual,mais indicado )//
+            console.log(`${ name + sobrenome } tem ${age + 1} anos e reside em ${JSON.stringify(address)}`)
+
+            </script>
+
+        </body>
+    
+    </html>
+
+
